@@ -33,19 +33,23 @@ const BikeDetails = () => {
             </div>
 
             <h2 className="text-xl text-start font-bold my-2">Highlights</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid  grid-cols-2 md:grid-cols-4 gap-6 w-full">
                 {[{ label: 'Range', value: '150 km' }, { label: 'Top Speed', value: '85km/h' }, { label: 'Charging', value: '4 hours' }, { label: 'Power', value: '3 kW' }].map((item, index) => (
-                    <div key={index} className="bg-custom text-nowrap py-2 px-12 rounded-sm">
-                        <p className="text-black text-sm font-extrabold">{item.label}</p>
-                        <p className="text-xl text-black font-bold">{item.value}</p>
+                    <div key={index}
+                        className="bg-custom text-start py-2 px-2 rounded-sm w-full">
+                        <p className="text-black text-start text-sm font-extrabold">{item.label}</p>
+                        <p p className="text-xl text-start text-black font-bold" > {item.value}</p>
                     </div>
-                ))}
-            </div>
+                ))
+                }
+            </div >
 
-            {bikeData.map((item, index) => (
-                <Accordian key={index} title={item.title} content={item.content} />
-            ))}
-        </div>
+            {
+                bikeData.map((item, index) => (
+                    <Accordian key={index} title={item.title} content={item.content} />
+                ))
+            }
+        </div >
 
     )
 }
