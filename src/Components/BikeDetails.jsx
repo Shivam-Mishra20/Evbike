@@ -5,7 +5,7 @@ import { bikeData } from './BikeData';
 
 const BikeDetails = () => {
     return (
-        <div className="w-full md:w-[50%]  p-1  mt-1  md:my-1 dark:text-white flex flex-col md:items-start justify-between">
+        <div className="w-full md:w-[50%]  p-12 md:p-1  mt-2  md:my-1 dark:text-white flex flex-col md:items-start justify-between">
 
             <div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-1">P-Sport</h1>

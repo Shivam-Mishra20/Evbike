@@ -2,7 +2,7 @@ import React from 'react';
 
 const ImageGal = ({ curimg, setCurimg }) => {
     return (
-        <div className="  relative lg:sticky lg:top-0 lg:left-0 w-full md:w-[50%] py-1 pl-2 h-[100vh] overflow-hidden">
+        <div className="  relative lg:sticky lg:top-0 lg:left-0 w-full md:w-[50%] py-1 pl-2 h-auto md:h-[100vh]  ">
             <div className="flex flex-col lg:flex-row gap-2  lg:gap-4">
                 {/* Sidebar mini images */}
                 <div className="w-full  lg:w-auto overflow-x-hidden lg:overflow-visible">
