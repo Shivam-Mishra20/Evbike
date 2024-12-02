@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ThemeToggle = ({ isDarkMode, toggleTheme }) => (
-    <div className="w-full text-right">
+    <div className="w-full text-right pt-3 px-2 ">
         <button
             onClick={toggleTheme}
             className="p-2 h-[50px] w-[50px] text-center rounded-full bg-white text-black shadow"

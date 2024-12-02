@@ -17,7 +17,7 @@ const Home = () => {
     return (
         <div className={`p-1 ${isDarkMode ? 'bg-gray-800' : ''}`}>
             <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-            <div className="text-black min-h-screen flex flex-col lg:flex-row items-start">
+            <div className="text-black min-h-screen w-full  flex flex-col md:flex-row items-start">
                 <ImageGal curimg={curimg} setCurimg={setCurimg} />
                 <BikeDetails curimg={curimg} />
             </div>
